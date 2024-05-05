@@ -4,7 +4,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import { MainPage, ReservationsPage } from '../pages';
+import { MainPage } from '../main/pages';
 
 export default function Router() {
   const router = createBrowserRouter([
