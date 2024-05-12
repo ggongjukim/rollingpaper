@@ -73,3 +73,14 @@ export default function setMobileHeight() {
     return () => window.removeEventListener('resize', setMobileHeight);
   }, []);
 ```
+<br/>
+<br/>
+
+## 5. is missing in props validation react/prop-types 에러 ESLint
+```json
+rules: {
+      ...
+        "react/prop-types": 0
+    },
+```
+당장추가

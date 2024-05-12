@@ -21,7 +21,9 @@ module.exports = {
       'react',
     ],
     rules: {
-        'react/react-in-jsx-scope': 'off'
+        'react/react-in-jsx-scope': 'off',
+        "react/prop-types": 0
     },
+   parser : "@babel/eslint-parser"
     
   };
