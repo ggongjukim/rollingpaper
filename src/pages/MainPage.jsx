@@ -3,7 +3,7 @@ import { useToast } from '@chakra-ui/react';
 
 import { EmailIcon } from '@chakra-ui/icons';
 import * as S from '../styles';
-import { CardList } from '../components';
+import { AudioPlay, CardList } from '../components';
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { useDisclosure } from '@chakra-ui/react';
@@ -31,7 +31,6 @@ export default function MainPage() {
       });
       return;
     }
-    
 
     const result = await axios
       .post(`${process.env.REACT_APP_FAST_API}/posts`, {
@@ -74,13 +73,15 @@ export default function MainPage() {
         >
           스승의 날 편지 쓰기
         </C.Button>
+        <AudioPlay/>
+        </S.BottomContainer>
 
         <C.Modal
           initialFocusRef={contentRef}
           finalFocusRef={nameRef}
           isOpen={isOpen}
           onClose={onClose}
-          size={'sm'}
+          size={'xs'}
           isCentered
         >
           <C.ModalOverlay />
@@ -132,8 +133,6 @@ export default function MainPage() {
             </C.ModalFooter>
           </C.ModalContent>
         </C.Modal>
-        {/* <Alert props={isVisible}/> */}
-      </S.BottomContainer>
     </S.Container>
   );
 }

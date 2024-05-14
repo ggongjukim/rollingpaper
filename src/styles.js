@@ -18,8 +18,6 @@ export const TopContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* z-index : 10; */
-  /* position : fixed; */
   padding-top: 30px;
 
   font-family: 'Gamja Flower', 'Noto Sans', 'Noto Sans KR';
@@ -31,8 +29,9 @@ export const TopContainer = styled.div`
 export const BottomContainer = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap : 10px;
+  
   z-index: 10;
   position: fixed;
   bottom: 30px;

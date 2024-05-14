@@ -8,11 +8,15 @@ export default function CardIcon({ card, idx }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <S.CardIconContianer>
-      <C.Image src={imageurl} onClick={onOpen}></C.Image>
-      <S.CardIconName>{card.name.length < 5 ? card.name : card.name.slice(0, 4) + '...'}</S.CardIconName>
-
-      <C.Modal size={'sm'} isOpen={isOpen} onClose={onClose} isCentered>
+    <>
+      {' '}
+      <S.CardIconContianer>
+        <C.Image src={imageurl} onClick={onOpen}></C.Image>
+        <S.CardIconName>
+          {card.name.length < 5 ? card.name : card.name.slice(0, 4) + '...'}
+        </S.CardIconName>
+      </S.CardIconContianer>
+      <C.Modal size={'xs'} isOpen={isOpen} onClose={onClose} isCentered>
         <C.ModalOverlay />
         <C.ModalContent>
           <C.ModalHeader></C.ModalHeader>
@@ -29,6 +33,6 @@ export default function CardIcon({ card, idx }) {
           </C.ModalFooter>
         </C.ModalContent>
       </C.Modal>
-    </S.CardIconContianer>
+    </>
   );
 }
