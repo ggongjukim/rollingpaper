@@ -2,7 +2,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
   background-image: url('hwangdaram.jpg'); // url('flower2.gif');
   background-size: contain;
   /* background-size : 130% 100%; */
@@ -11,6 +11,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-repeat: repeat-y;
+
 `;
 
 export const TopContainer = styled.div`
@@ -30,8 +32,8 @@ export const BottomContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  gap : 10px;
-  
+  gap: 10px;
+
   z-index: 10;
   position: fixed;
   bottom: 30px;

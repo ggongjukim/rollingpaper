@@ -8,11 +8,9 @@ export default function AudioPlay() {
 
   const playHandler = () => {
     setPlay(!isPlay);
-
   };
 
   useEffect(() => {
-
     if (isPlay) {
       audioEl.current.play();
     } else {
@@ -26,9 +24,15 @@ export default function AudioPlay() {
         // isRound={true}
         // variant='solid'
         // variant='unstyled'
-        size = {'lg'}
+        size={'lg'}
         aria-label='AudioPlay'
-        icon={isPlay ? <M.MusicNoteRounded fontSize='large' /> : <M.MusicOffRounded fontSize='large'/>}
+        icon={
+          isPlay ? (
+            <M.MusicNoteRounded fontSize='large' />
+          ) : (
+            <M.MusicOffRounded fontSize='large' />
+          )
+        }
         onClick={playHandler}
       />
       <audio loop src={`teachersday.wav`} ref={audioEl}></audio>
