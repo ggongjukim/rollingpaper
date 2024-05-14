@@ -85,4 +85,10 @@ rules: {
 ```
 당장추가
 
-## .env 설정
+<br/>
+<br/>
+
+## 6.  .env 설정
+```
+REACT_APP_FAST_API = {YOUR_API_REQUEST_BASE_URL}
+```
