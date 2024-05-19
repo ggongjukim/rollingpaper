@@ -1,3 +1,24 @@
+# 결과물 👨‍💻
+
+![teacherdaysgif](https://github.com/ggongjukim/rollingpaper/assets/75241542/e03e659e-a773-4032-a7bb-8f629ffd4e6e)
+
+
+1. 편지 쓰기 (Create)
+2. 편지 수정 (Update)
+3. 편지 조회 (Read)
+4. 노래 재생 / 끄기
+
+끝 ,, 
+
+<br/>
+<br/>
+
+# api 서버 [🔗](http://54.227.18.151/docs)
+이모지 클릭
+
+<br/>
+<br/>
+
 # 시행착오 🤔
 ## 1. `npx create-react-app .` 오류
 시작부터 오류가 ;;
