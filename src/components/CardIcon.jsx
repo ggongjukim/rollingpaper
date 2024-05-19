@@ -44,7 +44,8 @@ export default function CardIcon({ card, idx, reloadCards }) {
           duration: 9000,
           isClosable: true,
         })
-      );
+      )
+      .then(()=>setEditing(!isEditing));
   };
 
   

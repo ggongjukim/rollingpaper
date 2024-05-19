@@ -2,7 +2,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* height: 100vh; */
+  height: 300vh;
   background-image: url('hwangdaram.jpg'); // url('flower2.gif');
   background-size: contain;
   /* background-size : 130% 100%; */
